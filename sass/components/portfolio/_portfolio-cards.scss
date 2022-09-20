@@ -1,0 +1,98 @@
+.list-of-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .item-of-portfolio {
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+    width:calc((100% - 30px) / 2);
+   
+  }
+  @media screen and (min-width:1200px) {
+    width:calc((100% - 60px) / 3);
+  }
+}
+  
+  .link-of-portfolio {
+    text-decoration: none;
+    display: block;
+    transition-property:box-shadow;
+    transition-timing-function: var(--hover-timing);
+    transition-duration: var(--hover-duration);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
+        & .hidden-text,
+        & .hidden-text {
+          transform: translateY(0%);
+        }
+    }
+   
+  }
+  
+  .card-thumb {
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .hidden-text {
+    position:absolute;
+    top:0;
+    left:0;
+    padding:77px 24px;
+    letter-spacing: 0.03em;
+    width:100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color:white;
+    font-size:18px;
+    line-height: 1.55;
+    transform: translateY(100%);  
+    transition-duration: var(--hover-duration);
+    transition-timing-function: var(--hover-timing);
+
+    @media screen and (min-width:768px) {
+      padding-top:49px;
+    }
+    @media screen and (min-width:1200px) {
+      padding:63px 24px;
+    }
+  }
+  
+  
+  .img-description {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: none;
+    border-bottom: var(--border-parameters);
+    border-left: var(--border-parameters);
+    border-right: var(--border-parameters);
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      height: 146px;
+    }
+    
+  }
+  .img-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-color-of-text);
+    margin-bottom: 4px;
+  }
+  
+  .img-text {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-of-text);
+  }

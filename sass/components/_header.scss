@@ -1,0 +1,119 @@
+.header {
+    display: block;
+    border-bottom: var(--border-parameters);
+    @media screen and (max-width:767px) {
+    padding-bottom:10px;  
+    height:60px;
+    }
+
+  }
+
+  .contact-type {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+    
+
+    @media screen and (max-width:767px) {
+      display: none;
+    }
+    @media screen and (min-width:768px) {
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width:1200px) {
+      gap: 30px;
+      flex-direction: row;
+    }
+    
+  }
+  
+  .telmail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color-of-text);
+    font-size:34px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition-property: color;
+    transition-timing-function: var(--hover-timing);
+    transition-duration: var(--hover-duration);
+
+    &:hover , &:focus {
+      color: var(--primary-hover-color);
+    }
+
+    @media screen and (min-width:768px) {
+      font-size:12px;
+    }
+    @media screen and (min-width:1200px) {
+      font-size:14px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .contact-icon {
+    fill: currentColor;
+
+    @media screen and (max-width:767px){
+      display:none;
+    }
+    
+  }
+
+  .contact-icon.email-header {
+    @media screen and (max-width:1199px) {
+      width:14px;
+      height:10px;
+    }
+    @media screen and (min-width:1200px) {
+      width:16px;
+      height:12px;
+    }
+  }
+  .contact-icon.tel-header {
+    @media screen and (max-width:1199px) {
+      width:10px;
+      height:14px;
+    }
+
+    @media screen and (min-width:1200px) {
+      width:10px;
+      height:16px;
+    }
+  }
+
+  .menu-toggle {
+    margin-left:auto;
+    background-color:transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    border:none;
+    cursor: pointer;
+    transition: color var(--hover-duration) var(--hover-timing);
+    &:active {
+      color:var(--primary-hover-color)
+    }
+
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+  }
+
+  .menu-open {
+fill:currentColor;
+  }
+
+
+
+
+
+

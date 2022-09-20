@@ -1,0 +1,208 @@
+.footer {
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:60px;
+    @media screen and (min-width:768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    @media screen and (max-width:1199px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      padding-left:76px;
+      padding-right:89px;
+    }
+    
+
+
+    @media screen and (min-width:1200px) {
+      display: flex;
+      align-items: baseline;
+      gap: 70px;
+      flex-direction: row;
+    }
+  }
+
+  .first-footer-tray {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+     margin-right:auto;  
+    }
+  }
+
+  .footer-list {
+    list-style: none;
+  }
+
+
+  .adress {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color);
+    font-style: normal;
+  }
+
+
+  .footer-item:not(:first-child) {
+    margin-top: 10px;
+  }
+  .footer-link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+  }
+
+  .second-footer-tray {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+     margin-left:auto;  
+    }
+  }
+  
+  .footer-title {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+    margin-bottom: 20px;
+  }
+  
+  .list-of-sm-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sm-icon-link-footer {
+    @extend %flex-center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-timing-function: var(--hover-timing);
+    transition-duration: var(--hover-duration);
+
+    &:hover,
+    &:focus {
+      background-color: var(--primary-hover-color);
+    }
+  }
+  
+
+  .sm-icon-footer {
+    fill: var(--primary-bg-color);
+  }
+  
+  .footer-form-container{
+
+    @media screen and (max-width:767px) {
+      width: 100%;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      margin-right:auto;  
+      margin-left:auto;
+     }
+ 
+    @media screen and (min-width:1200px) {
+    margin-left:auto;
+  }
+}
+  .email-form-title {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--primary-bg-color);
+    margin-bottom:20px;
+  }
+  
+  .footer-form {
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+   
+  
+
+    @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex:wrap;
+    gap:12px;
+  }
+  }
+  
+  .email-footer {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  padding-left:16px;
+  padding-top:15px;
+  padding-bottom:15px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  outline: transparent;
+  transition:var(--hover-duration), var(--hover-timing);
+
+  &:focus {
+    border-color:#2196f3;
+  }
+
+   @media screen and (min-width:768px) {
+    width:450px;
+   }
+   @media screen and (min-width:1200px){
+    width:358px;
+   }
+}
+  
+  .footer-button-submit {
+    
+    @extend %flex-center;
+    width:200px;
+    background-color: var(--primary-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border:0px;
+    border-color:transparent;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color:var(--primary-bg-color);
+    font-weight: 700;
+    gap:10px;
+    cursor: pointer;
+    padding:10px 28px;
+    transition:background-color var(--hover-duration) var(--hover-timing), box-shadow var(--hover-duration) var(--hover-timing);
+  
+  &:hover,
+  &:focus {
+    background: var(--secondary-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (max-width:1199px) {
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+  .svg-send {
+  fill:var(--primary-bg-color);
+  }
+  

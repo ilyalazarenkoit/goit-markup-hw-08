@@ -1,0 +1,44 @@
+.activity {
+    padding-top: 0;
+    display: none;
+
+    @media screen and (min-width:1200px) {
+      display:block;
+    }
+  }
+  
+.activity__title {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+
+.activity__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+.activity__thumb {
+  position: relative;
+  }
+  
+  .activity__text {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color:rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom:27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  }

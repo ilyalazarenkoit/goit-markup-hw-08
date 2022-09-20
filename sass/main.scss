@@ -1,0 +1,38 @@
+// Variables
+
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+
+
+// Base
+
+@import "./base/common";
+@import "./base/reset";
+@import "./base/container";
+@import "./base/section";
+
+
+// Common Components 
+
+@import "./components/header";
+@import "./components/menu";
+@import "./components/navigation";
+@import "./components/logo";
+@import "./components/footer";
+
+
+// Components of Main Page
+@import "./components/main/hero";
+@import "./components/main/modal";
+@import "./components/main/registration-form";
+@import "./components/main/advantages";
+@import "./components/main/activity";
+@import "./components/main/staff";
+@import "./components/main/clients";
+
+// Components of Portfolio Page
+@import "./components/portfolio/portfolio-buttons";
+@import "./components/portfolio/portfolio-cards";
+
+

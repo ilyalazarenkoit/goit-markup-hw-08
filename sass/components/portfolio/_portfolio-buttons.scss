@@ -1,0 +1,51 @@
+.list-of-buttons {
+    @media screen and (max-width:767px) {
+     margin-bottom:40px;
+     display: flex;
+     flex-wrap: wrap;
+     align-content:flex-start;
+     padding-right:80px;
+    }
+
+    @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 8px;
+    margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+    }
+  }
+  
+  .button-portfolio {
+    display: inline-block;
+    background-color: var(--grey-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+    border-radius: 4px;
+    border: 0 solid transparent;
+    padding: 6px 22px;
+    cursor: pointer;
+    transition-property:border-color, background-color, box-shadow;
+    transition-timing-function: var(--hover-timing);
+    transition-duration: var(--hover-duration);
+  &:hover,
+  &:focus {
+    background-color: var(--primary-hover-color);
+    color: #ffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (max-width:767px) {
+    margin-bottom:15px;
+    margin-right:8px;
+  }
+}
+  
